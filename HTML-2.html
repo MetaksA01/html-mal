@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saphira</title>
+    <style>
+        @media only screen and (max-width: 600px) {
+
+            h1,
+            .message,
+            .alert,
+            .btn-title {
+                font-size: 4vw;
+                /* Уменьшено с 5vw */
+            }
+
+            .card,
+            .btn-content {
+                padding: 3vw;
+                /* Уменьшено с 4vw */
+            }
+
+            .icon,
+            .icon-arrow svg {
+                width: 10vw;
+                /* Уменьшено с 12vw */
+                height: auto;
+            }
+
+            .btn-conteiner {
+                padding: 2vw 0;
+                /* Уменьшено с 3vw */
+            }
+        }
+
+        /* Основные стили */
+        body {
+            background-color: #1c181e;
+            color: white;
+            font-family: 'Helvetica Neue', sans-serif;
+            padding-top: 5vh;
+        }
+
+        h1 {
+            font-weight: 900;
+            letter-spacing: -1px;
+            line-height: 1;
+            text-align: center;
+            margin-top: 5vh;
+        }
+
+        .message {
+            text-align: center;
+            font-family: 'The Sans-Serif';
+            font-size: 1rem;
+            /* Уменьшено с 1.2rem */
+        }
+
+        .card {
+            background-color: #404040;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            /* Уменьшено с 1rem */
+            margin-bottom: 1rem;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            background-color: #666666;
+            padding: 0.4rem;
+            /* Уменьшено с 0.5rem */
+            color: white;
+        }
+
+        .alert {
+            font-weight: 600;
+        }
+
+        .btn-conteiner {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            /* Уменьшено с 2rem */
+        }
+
+        .btn-content {
+            display: flex;
+            align-items: center;
+            padding: 8px 20px;
+            /* Уменьшено с 10px 30px */
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            /* Уменьшено с 1.5rem */
+            color: white;
+            background: black;
+            border-radius: 10px;
+            box-shadow: 0 0 0.2em 0 black;
+            cursor: pointer;
+        }
+
+        .btn-content .icon-arrow {
+            margin-left: 10px;
+            /* Уменьшено с 15px */
+        }
+
+        .icon-arrow svg {
+            width: 16px;
+            /* Уменьшено с 20px */
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Saphira</h1>
+    <p class="message">Приложение находиться все еще на Бета-Тесте</p>
+    <!-- Карточки с инструкциями -->
+    <div class="card">
+        <div class="header"> <span class="icon">-</span>
+            <p class="alert">Каждого пользователя мы одобряем в ручном порядке во избежание ботов</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="header"> <span class="icon">-</span>
+            <p class="alert">Проверка занимает от 1-24часа</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="header"> <span class="icon">-</span>
+            <p class="alert">Мы с каждым днем улучшаем наш сервис!</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="header"> <span class="icon">-</span>
+            <p class="alert">Контакты поддержки: Dualwidget@support.com</p>
+        </div>
+    </div> <!-- Кнопка продолжения -->
+    <p class="message">Наша подборка для тебя :3</p>
+    <div class="btn-conteiner">
+        <div class="btn-content" onclick="redirectToLink();"> <span class="btn-title">ПРОДОЛЖИТЬ</span> <span
+                class="icon-arrow"> <!-- SVG стрелки --> </span> </div>
+    </div>
+    <script>
+        function redirectToLink() {
+            window.location.href = "https://ru.pinterest.com/vanillavika/%D0%BF%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%B7%D0%B0%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8-%D0%BD%D0%B0-%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD/";
+        }
+    </script>
+</body>
+
+</html>
